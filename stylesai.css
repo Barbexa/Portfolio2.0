@@ -1,0 +1,769 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    overflow-x: hidden;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+p {
+    color: rgba(85, 85, 85);
+
+}
+
+/*TRANSITION*/
+
+a,
+.btn {
+    transition: all 300ms ease;
+
+}
+
+/*Desktop nav*/
+nav,
+.nav_link {
+    display: flex;
+
+}
+
+nav {
+    justify-content: space-around;
+    align-items: center;
+    height: 17vh;
+}
+
+
+.nav_link {
+    gap: 2rem;
+    list-style: none;
+    font-size: 1.5rem;
+
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+    text-decoration-color: #fff;
+}
+
+a:hover {
+    color: grey;
+    text-decoration: underline;
+    text-underline-offset: 1rem;
+    text-decoration-color: rgba(181, 181, 181);
+
+}
+
+
+
+.logo:hover {
+    cursor: default;
+}
+
+.main-header {
+    /* 1. Enable Flexbox */
+    display: flex;
+    /* 2. Push children to the edges */
+    justify-content: space-between;
+    /* 3. Vertically center the logo and icon */
+    align-items: center;
+    /* 4. Add some horizontal space */
+    padding: 10px 20px;
+    /* 5. Ensure it takes up the full width of its parent */
+    width: 90%;
+}
+
+/* Ensure the logo is not taking up unnecessary space */
+.logo {
+    /* Adjust font size, color, etc. as needed */
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* On mobile icon should be visible next to the logo */
+.hamburger-menu {
+    position: relative;
+}
+
+.menu-links {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    display: none;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background-color: white;
+    min-width: 150px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+}
+
+.menu-links.open {
+    display: block;
+}
+
+#hamburger-nav {
+    display: flex;
+
+    padding: 0;
+}
+
+.hamburger-menu {
+    position: relative;
+    display: inline-block;
+}
+
+.hamburger-icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 24px;
+    width: 30px;
+    cursor: pointer;
+}
+
+.hamburger-icon span {
+    width: 100%;
+    height: 2px;
+    background-color: #000;
+    transition: all 0.3 ease-in-out;
+}
+
+.menu-links {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: #fff;
+    width: fit-content;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.3 ease-in-out;
+
+}
+
+.menu-links a {
+    display: block;
+    padding: 10px;
+    text-align: center;
+    font-size: 1.5rem;
+    color: black;
+    text-decoration: none;
+    transition: all 0.3 ease-in-out;
+}
+
+.menu-links li {
+    list-style: none;
+}
+
+.menu-links.open {
+    max-height: 300px;
+}
+
+.hamburger-icon.open span:first-child {
+    transform: rotate(45deg) translate(10px, 5px);
+}
+
+.hamburger-icon.open span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger-icon.open span:last-child {
+    transform: rotate(-45deg) translate(10px, -5px);
+}
+
+.hamburger-icon span:first-child {
+    transform: none;
+}
+
+.hamburger-icon span:first-child {
+    opacity: 1;
+}
+
+.hamburger-icon span:first-child {
+    transform: none;
+}
+
+/*section*/
+section {
+    padding-top: 4vh;
+    height: 96px;
+    margin: 0 5%;
+    box-sizing: border-box;
+    min-height: fit-content;
+
+}
+
+.section-container {
+    display: flex;
+}
+
+/*profilr */
+#profile {
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    height: 80vh;
+}
+
+.section__pic-container {
+    display: flex;
+    height: 400px;
+    width: 400px;
+    margin: auto 0;
+    padding-left: 250px;
+    justify-content: center;
+}
+
+.section__text {
+    align-self: center;
+    text-align: center;
+}
+
+.section__text p {
+    font-weight: 600;
+}
+
+.section__text__p1 {
+    text-align: center;
+}
+
+.section__text__p2 {
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+.title {
+    font-size: 3rem;
+    text-align: center;
+}
+
+#socials-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    gap: 1rem;
+}
+
+/*icon*/
+.icon {
+    cursor: pointer;
+    height: 2rem;
+}
+
+i .icon {
+    height: 300px;
+}
+
+/*button*/
+.btn-container {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.btn {
+    font-weight: 600;
+    transition: all 300ms ease;
+    padding: 1rem;
+    width: 8rem;
+    border-radius: 2rem;
+}
+
+
+.btn-color-1,
+.btn-color-2 {
+    border: rgb(53, 53, 53) 0.1rem solid;
+
+}
+
+.btn-color-1:hover,
+.btn-color-2:hover {
+    cursor: pointer;
+
+}
+
+.btn-color-1,
+.btn-color-2:hover {
+    background: rgb(53, 53, 53);
+    color: #fff;
+}
+
+.btn-color-1:hover {
+    background: rgb(0, 0, 0);
+}
+
+.btn-color-2 {
+    background: none;
+}
+
+.btn-color-2:hover {
+    border: rgb(255, 255, 255, ) 0.1rem solid;
+}
+
+.btn_container {
+    gap: 1rem;
+}
+
+
+
+#about-profile {
+    position: relative;
+    padding-top: 80px;
+
+}
+
+
+
+.contained {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+
+.main-content {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.con-content {
+    padding: 1.5rem;
+    flex: 1;
+    background: #fff;
+    border-radius: 2rem;
+    border-color: rgb(163, 163, 163);
+    text-align: center;
+
+}
+
+.content-line:hover {
+    background: #000;
+    color: #fff;
+
+}
+
+.content-line {
+    padding: 1.5rem;
+    flex: 1;
+    background: #fff;
+    border-radius: 2rem;
+    border: rgb(53, 53, 53) 0.1rem solid;
+    border-color: rgb(163, 163, 163);
+    text-align: center;
+    transition: all 300ms ease;
+
+
+
+}
+
+.con-content img {
+    width: 50px;
+    height: 50px;
+}
+
+.left {
+    width: 35%;
+    display: flex;
+
+}
+
+.left .pic {
+    display: flex;
+}
+
+.right {
+    width: 65%;
+    padding-top: 60px;
+    padding-left: 80px;
+
+}
+
+.pic img {
+    width: 300px;
+}
+
+.word-content {
+    padding: 0px;
+}
+
+/*About section*/
+#about {
+    position: relative;
+    padding-top: 150px;
+}
+
+.about-containers {
+    gap: 2rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+
+.about-details-container {
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 220px;
+    /*made additional here */
+
+}
+
+.about-containers,
+.about-details-container {
+    display: flex;
+}
+
+.about-pic {
+    border-radius: 2rem;
+    width: 300px;
+}
+
+.arrow {
+    position: absolute;
+    right: .5rem;
+    bottom: 2.5rem;
+}
+
+
+
+.details-container {
+    padding: 1.5rem;
+    flex: 1;
+    background: #fff;
+    border-radius: 2rem;
+    border: rgb(53, 53, 53) 0.1rem solid;
+    border-color: rgb(163, 163, 163);
+    text-align: center;
+}
+
+.section-container {
+    gap: 6rem;
+    height: 80%;
+
+}
+
+.section__pic-container {
+    height: 400px;
+    width: 400px;
+    margin: auto 0;
+
+
+}
+
+/*Experience*/
+#experience {
+    padding-top: 150px;
+    position: relative;
+}
+
+.experience-sub-title {
+    color: rgb(85, 85, 85);
+    font-weight: 600;
+    font-size: 1.75rem;
+    margin-bottom: 2rem;
+}
+
+.experience-details-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.article-container {
+    display: flex;
+    text-align: initial;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 2.5rem;
+    justify-content: space-around;
+}
+
+article {
+    display: flex;
+    width: 10rem;
+    justify-content: space-around;
+    gap: 0.5rem;
+}
+
+
+article .icon {
+    cursor: default;
+}
+
+/*Project section*/
+#project {
+    padding-top: 150px;
+    position: relative;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.color-container {
+    border-color: rgb(163, 163, 163);
+    background: rgb(250, 250, 250);
+
+}
+
+.project-img {
+    padding-top: 30px;
+    border-radius: 2rem;
+    width: 90%;
+    height: 90%;
+}
+
+.project-title {
+    margin: 1rem;
+    color: #000;
+}
+
+.project-btn {
+    color: #000;
+    border-color: rgb(163, 163, 163);
+}
+
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-bottom: 50px;
+}
+
+/* --- Individual Gallery Item Styling --- */
+.gallery-item {
+
+    border-radius: 8px;
+    box-shadow: 0 8px 16px var(--shadow-light);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 0.1rem solid rgb(163, 163, 163);
+    background-color: rgb(250, 250, 250);
+}
+
+.gallery-item:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 24px var(--shadow-hover);
+}
+
+.screenshot {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.caption {
+    padding: 20px;
+    text-align: left;
+}
+
+.caption h3 {
+    font-size: 1.3em;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: var(--color-text-primary);
+}
+
+.caption p {
+    font-size: 1em;
+    color: var(--color-text-secondary);
+}
+
+
+.monochromatic-btn {
+    display: inline-block;
+    padding: 10px 25px;
+    border-radius: 15px;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+    /* Remove underline */
+    text-align: center;
+    cursor: pointer;
+    background-color: #1a1a1a;
+    color: #ffffff;
+    border: 2px solid #1a1a1a;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+}
+
+.monochromatic-btn:hover {
+    background-color: #333333;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+.monochromatic-btn.secondary:hover {
+    background-color: #1a1a1a;
+    color: #ffffff;
+    border-color: #1a1a1a;
+    transform: translateY(-2px);
+}
+
+/*contact
+#contact {
+    padding-top: 150px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 70vh;
+
+}
+
+.contact-info-upper-container {
+    display: flex;
+    justify-content: center;
+    border-radius: 2rem;
+    border: rgb(53, 53, 53) 0.1rem solid;
+    border-color: rgb(163, 163, 163);
+    background: (250, 250, 250);
+    margin: 2rem auto;
+    padding: 0.5rem;
+}
+
+.contact-info-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+    margin: 1rem;
+}
+
+.contact-info-container p {
+    font-size: larger;
+}
+
+.conact-icon {
+    cursor: default;
+
+}
+.contact-info-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 10px 0;
+}
+
+.contact-info-container img.icon {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+}
+
+.contact-info-container p {
+    margin: 0;
+    font-size: 16px;
+}
+
+.contact-info-container a {
+    text-decoration: none;
+    color: #333;
+}
+
+/* Base styles for the entire contact section */
+#contact {
+    padding-top: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+/* The outer container that holds the contact links */
+.contact-info-upper-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* Stacks items vertically on small screens */
+    gap: 1rem;
+    padding: 1rem;
+    margin: 1rem;
+    border: 0.1rem solid rgb(163, 163, 163);
+    border-radius: 2rem;
+    background-color: rgb(250, 250, 250);
+}
+
+/* Container for each individual contact link (icon + text) */
+.contact-info-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.contact-info-container p {
+    font-size: 20px;
+    margin: 0;
+}
+
+/* Styles for the contact icons */
+.contact-info-container img .icon {
+    width: 45px;
+    height: 45px;
+    cursor: pointer;
+}
+
+.contact-info-container img {
+    width: 55px;
+    height: 45px;
+}
+
+/* Ensures long text like an email address breaks properly */
+.contact-info-container a {
+    word-break: break-all;
+    text-decoration: none;
+    color: #333;
+}
+
+.email-icon {
+    height: 2.5rem;
+}
+
+.linkedin-icon {
+    height: 2.5rem;
+}
+
+.nav-linker {
+    gap: 2rem;
+    list-style: none;
+    font-size: 1.5rem;
+    display: flex;
+}
+
+.nav {
+    justify-content: space-around;
+    align-items: center;
+    height: 17vh;
+    display: flex;
+}
+
+footer {
+    height: 26vh;
+    margin: 0 1rem;
+}
+
+footer p {
+    text-align: center;
+}
+
+
+.contact-info-container a:hover {
+    color: grey;
+    text-decoration: underline;
+    text-underline-offset: 1rem;
+    text-decoration-color: rgba(181, 181, 181);
+
+}

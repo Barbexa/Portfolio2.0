@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,500&display=swap');
+
+
+/* --- Base Theme Colors --- */
+:root {
+    --color-background: #F8F8F8;
+    --color-foreground: #FFFFFF;
+    --color-text-primary: #1A1A1A;
+    --color-text-secondary: #5C5C5C;
+    --color-accent: #E0E0E0;
+    --shadow-light: rgba(0, 0, 0, 0.08);
+    --shadow-hover: rgba(0, 0, 0, 0.15);
+
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: var(--color-background);
+    color: var(--color-text-primary);
+    line-height: 1.6;
+    padding: 20px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* --- Header Styling --- */
+.gallery-header {
+    text-align: center;
+    padding: 40px 20px;
+    margin-bottom: 40px;
+}
+
+.gallery-header h1 {
+    font-size: 2.8em;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.gallery-header p {
+    color: var(--color-text-secondary);
+    font-size: 1.1em;
+}
+
+/* --- Gallery Layout (CSS Grid) --- */
+
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-bottom: 50px;
+}
+
+/* --- Individual Gallery Item Styling --- */
+
+.gallery-item {
+    background-color: var(--color-foreground);
+    border-radius: 8px;
+    box-shadow: 0 8px 16px var(--shadow-light);
+    /* More pronounced, softer shadow */
+    overflow: hidden;
+    /* Ensures image doesn't break boundaries, especially with border-radius */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery-item:hover {
+    transform: translateY(-8px);
+    /* More pronounced lift effect on hover */
+    box-shadow: 0 12px 24px var(--shadow-hover);
+    /* Stronger, more noticeable shadow on hover */
+}
+
+.screenshot {
+    width: 100%;
+    /* Makes the image fill the width of the card */
+    height: auto;
+    /* Maintains aspect ratio */
+    display: block;
+}
+
+.caption {
+    padding: 20px;
+    /* Slightly more padding inside the caption */
+    text-align: left;
+}
+
+.caption h3 {
+    font-size: 1.3em;
+    /* Slightly larger project title */
+    font-weight: 600;
+    /* Bolder title */
+    margin-bottom: 8px;
+    /* More space below title */
+    color: var(--color-text-primary);
+}
+
+.caption p {
+    font-size: 1em;
+    /* Slightly larger category text */
+    color: var(--color-text-secondary);
+}
+
+/* --- Optional: Media Query for smaller screens (e.g., phones) --- */
+@media (max-width: 768px) {
+
+    /* Adjust breakpoint for tablets/smaller laptops */
+    body {
+        padding: 15px;
+    }
+
+    .gallery-header {
+        padding: 30px 15px;
+        margin-bottom: 30px;
+    }
+
+    .gallery-header h1 {
+        font-size: 2em;
+    }
+
+    .gallery-header p {
+        font-size: 1em;
+    }
+
+    .gallery-container {
+        grid-template-columns: 1fr;
+        /* On small screens, force a single column */
+        gap: 25px;
+    }
+
+    .gallery-item {
+        border-radius: 6px;
+        /* Slightly smaller border-radius for smaller cards */
+    }
+
+    .caption {
+        padding: 15px;
+    }
+}
+
+/* Optional: Very small mobile adjustment */
+@media (max-width: 480px) {
+    .gallery-header h1 {
+        font-size: 1.8em;
+    }
+
+    .gallery-header p {
+        font-size: 0.9em;
+    }
+}

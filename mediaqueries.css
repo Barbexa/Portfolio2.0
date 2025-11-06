@@ -1,0 +1,474 @@
+@media screen and (max-width: 1400px) {
+    #profile {
+        height: 87vh;
+        margin-bottom: 6rem;
+    }
+
+    .about-container {
+        flex-wrap: wrap;
+    }
+
+    #hamburger-nav {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    #desktop-nav {
+        display: none;
+    }
+
+    #hamburger-nav {
+        display: flex;
+    }
+
+    #experience,
+    .experience-details-container {
+        margin-top: 2rem;
+
+    }
+
+    #profile,
+    .contained {
+        display: block;
+        padding-bottom: 2px;
+    }
+
+    .arrow {
+        display: none;
+    }
+
+    section,
+    .contained {
+        height: fit-content;
+    }
+
+    section {
+        margin: 0 10rem;
+    }
+
+    .section__pic-container {
+        width: 275px;
+        height: 275px;
+        position: relative;
+        display: flex;
+        padding-left: 75px;
+
+    }
+
+    .left .pic {
+        width: 275px;
+        margin: 0 auto 0.5rem;
+
+
+    }
+
+    .about-container {
+        margin-top: 0;
+    }
+
+    .email-icon {
+        height: 1rem;
+    }
+
+    .linkedin-icon {
+        height: 1rem;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+
+
+    #contact,
+    footer {
+        height: 40vh;
+    }
+
+    #profile {
+        height: 87vh;
+        margin-bottom: 0;
+    }
+
+    article {
+        font-size: 1rem;
+    }
+
+    footer-nav {
+        height: fit-content;
+        margin-bottom: 2rem;
+    }
+
+    .about-container,
+    .contact-info-upper-container,
+    .btn-container {
+        flex-wrap: wrap;
+    }
+
+
+    .nav-links li a {
+        font-size: 3rem;
+
+    }
+
+    .about-profile {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .about-profile .contained .pic img {
+        position: relative;
+        left: 120px;
+        right: 200px;
+    }
+
+    .contact-info-container p {
+        font-size: 1.1rem;
+    }
+
+    #hamburger-nav {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .email-icon {
+        height: 1rem;
+    }
+
+    .linkedin-icon {
+        height: 1rem;
+    }
+
+}
+
+/* Tablets (≤ 1024px) */
+@media (max-width: 1024px) {
+    nav {
+        justify-content: space-between;
+        padding: 0 2rem;
+    }
+
+    section {
+        margin: 0 5rem;
+    }
+
+    .section__pic-container {
+        padding-left: 0;
+        width: 300px;
+        height: 300px;
+    }
+
+    .right {
+        padding-left: 40px;
+    }
+
+    #hamburger-nav {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .email-icon {
+        height: 1.5rem;
+    }
+
+    .linkedin-icon {
+        height: 1.5rem;
+    }
+
+
+    .contact-info-container p {
+        font-size: 0.8rem;
+    }
+
+    .contact-info-container img {
+        height: 1rem;
+        width: 1rem;
+    }
+
+
+}
+
+/* Mobile (≤ 768px) */
+@media (max-width: 768px) {
+
+    /* Show hamburger menu */
+    nav .nav_link {
+        display: none;
+    }
+
+    #hamburger-nav {
+        display: block;
+    }
+
+    section {
+        margin: 0 2rem;
+    }
+
+    #profile {
+        flex-direction: column;
+        height: auto;
+        text-align: center;
+    }
+
+    .section__pic-container {
+        margin: 0 auto;
+        width: 250px;
+        height: 250px;
+        padding: 0;
+    }
+
+    .section__text {
+        margin-top: 2rem;
+    }
+
+    .contained,
+    .main-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .left,
+    .right {
+        width: 100%;
+        padding: 0;
+    }
+
+    .about-containers,
+    .about-details-container,
+    .section-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .about-pic {
+        width: 250px;
+    }
+
+    .article-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .email-icon {
+        height: 1rem;
+    }
+
+    .linkedin-icon {
+        height: 1rem;
+    }
+
+}
+
+/* Extra small (≤ 480px) */
+@media (max-width: 480px) {
+    nav {
+        height: auto;
+        padding: 1rem;
+    }
+
+    .logo {
+        font-size: 1.5rem;
+    }
+
+    .nav-linker {
+        font-size: 1.2rem;
+        gap: 1rem;
+    }
+
+    .title {
+        font-size: 2rem;
+    }
+
+    .section__text__p2 {
+        font-size: 1.2rem;
+    }
+
+    .btn {
+        width: 100%;
+    }
+
+    .email-icon {
+        height: 1rem;
+    }
+
+    .linkedin-icon {
+        height: 1rem;
+    }
+
+
+    /* .contact-info-upper-container {
+        flex-direction: column;
+        text-align: center;
+    }*/
+}
+
+/* Tablet (≤ 1024px) */
+@media (max-width: 1024px) {
+    footer {
+        height: auto;
+        padding: 2rem 1rem;
+        text-align: center;
+    }
+}
+
+/* Mobile (≤ 768px) */
+@media (max-width: 768px) {
+    footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        padding: 1.5rem 1rem;
+    }
+
+    footer p {
+        font-size: 0.9rem;
+        line-height: 1.4;
+    }
+
+    .email-icon {
+        height: 1rem;
+    }
+
+    .linkedin-icon {
+        height: 1rem;
+    }
+
+}
+
+/* Small phones (≤ 480px) */
+@media (max-width: 480px) {
+    footer {
+        padding: 1rem;
+    }
+
+    footer p {
+        font-size: 0.8rem;
+    }
+
+    .email-icon {
+        height: 0.5rem;
+    }
+
+    .linkedin-icon {
+        height: 0.5rem;
+        width: 10px;
+    }
+
+}
+
+/* For screens larger than 600px */
+@media (min-width: 601px) {
+    #contact {
+        padding-top: 150px;
+    }
+
+    .contact-info-upper-container {
+        flex-direction: row;
+        justify-content: space-between;
+        width: 80%;
+        max-width: 800px;
+
+    }
+
+    .contact-info-container .icon {
+        width: 30px;
+        height: 30px;
+    }
+
+    .contact-info-container p {
+        font-size: 1.1rem;
+    }
+}
+
+
+/* --- Optional: Media Query for smaller screens (e.g., phones) --- */
+@media (max-width: 768px) {
+
+    /* Adjust breakpoint for tablets/smaller laptops */
+    body {
+        padding: 15px;
+    }
+
+    .gallery-header {
+        padding: 30px 15px;
+        margin-bottom: 30px;
+    }
+
+    .gallery-header h1 {
+        font-size: 2em;
+    }
+
+    .gallery-header p {
+        font-size: 1em;
+    }
+
+    .gallery-container {
+        grid-template-columns: 1fr;
+        /* On small screens, force a single column */
+        gap: 25px;
+    }
+
+    .gallery-item {
+        border-radius: 6px;
+        /* Slightly smaller border-radius for smaller cards */
+    }
+
+    .caption {
+        padding: 15px;
+    }
+}
+
+/* Optional: Very small mobile adjustment */
+@media (max-width: 480px) {
+    .gallery-header h1 {
+        font-size: 1.8em;
+    }
+
+    .gallery-header p {
+        font-size: 0.9em;
+    }
+}
+
+/* Media Query for Mobile Screens (e.g., 360px width) */
+@media screen and (max-width: 500px) {
+
+    .footer-content {
+        /* *** Key Change: Stacks content vertically *** */
+        flex-direction: column;
+        align-items: center;
+        /* Center the entire footer content */
+    }
+
+    .footer-section {
+        /* Remove the fixed width so it stretches to fill the screen */
+        min-width: 100%;
+        /* Center-align the text in each section */
+        text-align: center;
+        padding: 15px 0;
+        /* Add vertical padding for separation */
+    }
+
+    .footer-section.social {
+        /* Ensure social icons remain inline and centered */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-section.links ul {
+        /* Center the navigation list items */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+
+    .footer-section h3 {
+        margin-top: 5px;
+    }
+}
