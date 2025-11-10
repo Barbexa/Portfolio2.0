@@ -115,7 +115,7 @@
 
 
     .nav-links li a {
-        font-size: 3rem;
+        font-size: 2rem;
 
     }
 
@@ -126,7 +126,8 @@
     }
 
     .about-profile .contained .pic img {
-        position: relative;
+        max-width: 100%;
+        height: auto;
         align-items: center;
     }
 
@@ -197,16 +198,39 @@
         width: 1rem;
     }
 
+    footer {
+        height: auto;
+        padding: 2rem 1rem;
+        text-align: center;
+    }
+
 
 }
 
 /* Mobile (≤ 768px) */
 @media (max-width: 768px) {
-    body {
-        overflow-x: hidden;
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        padding: 1.5rem 1rem;
     }
 
-    /* Show hamburger menu */
+    footer p {
+        font-size: 0.9rem;
+        line-height: 1.4;
+    }
+
+    .email-icon {
+        height: 1rem;
+    }
+
+    .linkedin-icon {
+        height: 1rem;
+    }
+
     nav .nav_link {
         display: none;
     }
@@ -317,56 +341,6 @@
     }
 
 
-    /* .contact-info-upper-container {
-        flex-direction: column;
-        text-align: center;
-    }*/
-}
-
-/* Tablet (≤ 1024px) */
-@media (max-width: 1024px) {
-    footer {
-        height: auto;
-        padding: 2rem 1rem;
-        text-align: center;
-    }
-}
-
-/* Mobile (≤ 768px) */
-@media (max-width: 768px) {
-    body {
-        overflow-x: hidden;
-    }
-
-    footer {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 1rem;
-        padding: 1.5rem 1rem;
-    }
-
-    footer p {
-        font-size: 0.9rem;
-        line-height: 1.4;
-    }
-
-    .email-icon {
-        height: 1rem;
-    }
-
-    .linkedin-icon {
-        height: 1rem;
-    }
-
-}
-
-/* Small phones (≤ 480px) */
-@media (max-width: 480px) {
-    body {
-        overflow-x: hidden;
-    }
-
     footer {
         padding: 1rem;
     }
@@ -384,7 +358,13 @@
         width: 10px;
     }
 
+
+
 }
+
+
+
+
 
 /* For screens larger than 600px */
 @media (min-width: 601px) {
