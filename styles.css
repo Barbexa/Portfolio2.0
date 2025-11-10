@@ -3,6 +3,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -216,10 +217,10 @@ section {
 
 .section__pic-container {
     display: flex;
-    height: 400px;
-    width: 400px;
+    height: 80%;
+    width: 80%;
     margin: auto 0;
-    padding-left: 250px;
+    padding: 0;
     justify-content: center;
 }
 
@@ -296,7 +297,7 @@ i .icon {
     color: #fff;
 }
 
-.btn-color-1 :hover {
+.btn-color-1 a:hover {
     color: #fff;
 }
 
