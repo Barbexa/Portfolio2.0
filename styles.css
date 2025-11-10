@@ -292,6 +292,14 @@ i .icon {
 
 }
 
+.btn-color-1 a {
+    color: #fff;
+}
+
+.btn-color-1 :hover {
+    color: #fff;
+}
+
 .btn-color-1,
 .btn-color-2:hover {
     background: rgb(53, 53, 53);

@@ -317,6 +317,10 @@
 
 /* Mobile (≤ 768px) */
 @media (max-width: 768px) {
+    body {
+        overflow-x: hidden;
+    }
+
     footer {
         display: flex;
         flex-direction: column;
@@ -342,6 +346,10 @@
 
 /* Small phones (≤ 480px) */
 @media (max-width: 480px) {
+    body {
+        overflow-x: hidden;
+    }
+
     footer {
         padding: 1rem;
     }
@@ -363,6 +371,10 @@
 
 /* For screens larger than 600px */
 @media (min-width: 601px) {
+    body {
+        overflow-x: hidden;
+    }
+
     #contact {
         padding-top: 150px;
     }
@@ -392,6 +404,7 @@
     /* Adjust breakpoint for tablets/smaller laptops */
     body {
         padding: 15px;
+        overflow: hidden;
     }
 
     .gallery-header {
@@ -425,6 +438,10 @@
 
 /* Optional: Very small mobile adjustment */
 @media (max-width: 480px) {
+    body {
+        overflow-x: hidden;
+    }
+
     .gallery-header h1 {
         font-size: 1.8em;
     }
@@ -436,6 +453,9 @@
 
 /* Media Query for Mobile Screens (e.g., 360px width) */
 @media screen and (max-width: 500px) {
+    body {
+        overflow-x: hidden;
+    }
 
     .footer-content {
         /* *** Key Change: Stacks content vertically *** */
