@@ -355,6 +355,7 @@ section {
 .title {
     font-size: 3rem;
     text-align: center;
+    color: var(--btn-color-2-text);
 }
 
 #socials-container {
@@ -394,6 +395,10 @@ i .icon {
 .btn-color-2 {
     border: rgb(53, 53, 53) 0.1rem solid;
 
+}
+
+.btn-color-1 {
+    background: var(--btn-color-1-text);
 }
 
 .btn-color-1:hover,
@@ -466,7 +471,7 @@ i .icon {
 }
 
 .content-line:hover {
-    background: var(--text-color-primary);
+    background: var(--text-color-secondary);
     color: var(--bg-color-primary);
 
 }
@@ -483,6 +488,10 @@ i .icon {
 
 
 
+}
+
+.content-line h2 {
+    color: var(--text-color);
 }
 
 .con-content img {
@@ -690,7 +699,7 @@ article .icon {
     font-size: 1.3em;
     font-weight: 600;
     margin-bottom: 8px;
-    color: var(--color-text-primary);
+    color: var(--text-color);
 }
 
 .caption p {
