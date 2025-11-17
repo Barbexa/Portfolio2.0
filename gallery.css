@@ -13,6 +13,17 @@
 
 }
 
+.dark-theme {
+    --color-background: #0f172a;
+    --color-foreground: #FFFFFF;
+    --color-text-primary: #F8F8F8;
+    --color-text-secondary: #5C5C5C;
+    --color-accent: #E0E0E0;
+
+
+
+}
+
 * {
     box-sizing: border-box;
     margin: 0;

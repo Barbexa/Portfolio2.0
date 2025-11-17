@@ -135,6 +135,7 @@ a:hover {
     /* Adjust font size, color, etc. as needed */
     font-size: 1.5rem;
     font-weight: bold;
+    color: var(--text-color-secondary);
 }
 
 /* On mobile icon should be visible next to the logo */
@@ -613,6 +614,10 @@ i .icon {
     flex-direction: row;
     gap: 2.5rem;
     justify-content: space-around;
+}
+
+.article-container h3 {
+    color: var(--text-color-primary);
 }
 
 article {
