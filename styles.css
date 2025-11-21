@@ -409,12 +409,11 @@ i .icon {
 }
 
 .btn-color-1 a {
-    color: var(--bg-color-primary);
+    color: #fff;
+
 }
 
-.btn-color-1 a:hover {
-    color: var(--bg-color-primary);
-}
+.btn-color-1 a:hover {}
 
 .btn-color-1,
 .btn-color-2:hover {
@@ -492,6 +491,10 @@ i .icon {
 }
 
 .content-line h2 {
+    color: var(--text-color);
+}
+
+.content-line p {
     color: var(--text-color);
 }
 
