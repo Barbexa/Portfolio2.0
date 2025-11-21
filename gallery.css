@@ -10,7 +10,8 @@
     --color-accent: #E0E0E0;
     --shadow-light: rgba(0, 0, 0, 0.08);
     --shadow-hover: rgba(0, 0, 0, 0.15);
-
+    --color-text: #1a1a1a;
+    --caption-color: #ffffff;
 }
 
 .dark-theme {
@@ -19,6 +20,8 @@
     --color-text-primary: #F8F8F8;
     --color-text-secondary: #5C5C5C;
     --color-accent: #E0E0E0;
+    --color-text: #1a1a1a;
+    --caption-color: #e6e6e6;
 
 
 
@@ -83,45 +86,35 @@ body {
 
 .gallery-item:hover {
     transform: translateY(-8px);
-    /* More pronounced lift effect on hover */
     box-shadow: 0 12px 24px var(--shadow-hover);
-    /* Stronger, more noticeable shadow on hover */
 }
 
 .screenshot {
     width: 100%;
-    /* Makes the image fill the width of the card */
     height: auto;
-    /* Maintains aspect ratio */
     display: block;
 }
 
 .caption {
     padding: 20px;
-    /* Slightly more padding inside the caption */
     text-align: left;
+    background-color: var(--caption-color);
 }
 
 .caption h3 {
     font-size: 1.3em;
-    /* Slightly larger project title */
     font-weight: 600;
-    /* Bolder title */
     margin-bottom: 8px;
-    /* More space below title */
-    color: var(--color-text-primary);
+    color: var(--color-text);
 }
 
 .caption p {
     font-size: 1em;
-    /* Slightly larger category text */
     color: var(--color-text-secondary);
 }
 
-/* --- Optional: Media Query for smaller screens (e.g., phones) --- */
 @media (max-width: 768px) {
 
-    /* Adjust breakpoint for tablets/smaller laptops */
     body {
         padding: 15px;
     }
@@ -141,13 +134,11 @@ body {
 
     .gallery-container {
         grid-template-columns: 1fr;
-        /* On small screens, force a single column */
         gap: 25px;
     }
 
     .gallery-item {
         border-radius: 6px;
-        /* Slightly smaller border-radius for smaller cards */
     }
 
     .caption {
@@ -155,7 +146,6 @@ body {
     }
 }
 
-/* Optional: Very small mobile adjustment */
 @media (max-width: 480px) {
     .gallery-header h1 {
         font-size: 1.8em;
